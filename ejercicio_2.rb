@@ -1,7 +1,11 @@
 module Formula
-  def perimetro
+  def area
     puts lado**2 if self.class == Cuadrado
     puts base*altura if self.class == Rectangulo
+  end
+  def perimetro
+    puts lado*4 if self.class == Cuadrado
+    puts base*2+altura*2 if self.class == Rectangulo
   end
 end
 
